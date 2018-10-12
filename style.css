@@ -200,7 +200,7 @@ button.mbutton {
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-  color: #fff;
+  color:var(--tcc);
   background-color: transparent;
   border-bottom: solid green;
 }
@@ -221,7 +221,7 @@ button.mbutton {
   border-bottom: solid 2px var(--prm);
 }
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
-  color: #fff;
+  color: var(--tcc);
   background-color: var(--bgg);
   
 }
