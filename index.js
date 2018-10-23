@@ -54,12 +54,12 @@ function manageColor(obb)
     }
     
 }
-// window.onscroll = function() { scrollFunction() };
+window.onscroll = function() { scrollFunction() };
 
-// function scrollFunction() {
-//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//         document.getElementById("tops").style.position = "fixed";
-//     } else {
-//         document.getElementById("tops").style.position = "static";
-//     }
-// }
+function scrollFunction() {
+    if (document.body.scrollTop > 512 || document.documentElement.scrollTop > 512) {
+        document.getElementById("tops").style.position = "fixed";
+    } else {
+        document.getElementById("tops").style.position = "static";
+    }
+}

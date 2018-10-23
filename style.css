@@ -71,7 +71,7 @@ body {
 #toggler {
   position: fixed;
   z-index: 99;
-  color: var(--tcc);
+  color: white;
   transition: .5s;
   left: 0;
   padding: .3rem .5rem;
@@ -186,12 +186,6 @@ button.mbutton {
 }
 
 
-@media (min-width: 768px){
-  .navbar-nav {
-  float: none;
-  margin: 0;
-}
-}
 /* TOP NAV BAR */
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
   color:var(--tcc);
@@ -249,43 +243,7 @@ a.navbar-brand:after {
   content: 'Home';
   font-size: 9px;
 }
-@media only screen and (max-width: 600px) {
-  .head {
-    font-size: 17px;
-  }
 
-  .cen
-{
-  display:unset;
-}
-.collapse {
-  display: none;
-}
-
-  body {
-    font-size: 10px;
-  }
-
-  .nav-tabs > li {
-    float: none;
-  }
-
-  .togglerRT {
-    display: inline-block;
-  }
-
-  .sidenav a {
-    font-size: 18px;
-  }
-  .nav_open {
-    width: 200px;
-  }
-  .main_open {
-    margin-left: 200px !important;
-  }
-
-
-}
 ul.sides {
   list-style: none;
   padding: 0;
@@ -379,4 +337,73 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+.charbox {
+  background: #fff;
+  height: 360px;
+  width: 100%;
+  border-radius: 11px;
+}
+#curve_chart
+{
+  position: relative;
+  margin-left: 10%;
+}
+.overs
+{
+  overflow: visible;
+}
+
+@media (max-width: 768px){
+  .navbar-nav {
+  float: none;
+  margin: 0;
+}
+
+.overs
+{
+  overflow: scroll;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .head {
+    font-size: 17px;
+  }
+
+
+  
+  .cen
+{
+  display:unset;
+}
+.collapse {
+  display: none;
+}
+
+  body {
+    font-size: 10px;
+  }
+
+  .nav-tabs > li {
+    float: none;
+  }
+
+  .togglerRT {
+    display: inline-block;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+  .nav_open {
+    width: 200px;
+  }
+  .main_open {
+    margin-left: 200px !important;
+  }
+
+
 }
