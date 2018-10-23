@@ -342,18 +342,30 @@ input:checked + .slider:before {
 
 .charbox {
   background: #fff;
-  height: 360px;
+  height: 500px;
   width: 100%;
   border-radius: 11px;
 }
 #curve_chart
 {
   position: absolute;
-  left: 32%;
+ left: 0;
 }
 .overs
 {
   overflow: visible;
+}
+
+.titlehead:hover {
+  border-left: solid 44px var(--prm);
+}
+.titlehead {
+  padding: 1rem;
+  width: 100%;
+  border-left: solid 10px  var(--prm);
+  border-bottom: solid 2px var(--prm);
+  position: relative;
+  transition: 0.5s;
 }
 
 @media (max-width: 768px){
@@ -373,7 +385,10 @@ input:checked + .slider:before {
     font-size: 17px;
   }
 
-
+  #curve_chart {
+    position: relative;
+    left: 0;
+}
   
   .cen
 {

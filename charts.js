@@ -11,10 +11,12 @@ function drawChart() {
   ]);
 
   var options = {
+    // title: 'OnBoard/OffBoard Employees monthly status',
     curveType: 'function',
     legend: { position: 'bottom' },
-    width: 640,
-    height: 360,
+    width: 900,
+    height: 500,
+  
   };
 
   var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
