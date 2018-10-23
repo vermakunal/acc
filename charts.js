@@ -11,7 +11,6 @@ function drawChart() {
   ]);
 
   var options = {
-    title: 'OnBoard/OffBoard Employees monthly status',
     curveType: 'function',
     legend: { position: 'bottom' },
     width: 640,
