@@ -39,6 +39,7 @@ body {
     color: var(--stcc);
     overflow-x: hidden;
     transition: .5s;
+    box-shadow: 1px 1px 13px var(--prm);
 }
 .sidenav a {
   padding: 8px 8px 8px 32px;
@@ -269,7 +270,9 @@ ul.sides>li>a {
 .sides>li>a:hover ,#ddm>li>a:hover {
   border-bottom: solid #9c27b0;
 }
-
+.tab-pane {
+  overflow-x: hidden;
+}
 ul#ddm {
   width: 72%;
   float: right;
@@ -277,8 +280,8 @@ ul#ddm {
 }
 
 .ndown {
-  /* position: absolute;
-  bottom: 0; */
+  position: absolute;
+  bottom: 0;
 }
 
 
@@ -356,10 +359,7 @@ input:checked + .slider:before {
   position: absolute;
   left: 20%;
 }
-.overs
-{
-  overflow: visible;
-}
+
 
 .titlehead:hover {
   border-left: solid 44px var(--prm);
@@ -378,11 +378,6 @@ input:checked + .slider:before {
   .navbar-nav {
   float: none;
   margin: 0;
-}
-
-.overs
-{
-  overflow: scroll;
 }
 }
 

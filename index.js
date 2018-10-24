@@ -9,7 +9,7 @@ function Toggle() {
     document.getElementById("main").classList.toggle("main_open");
     toggler.classList.toggle("togggler_left");
     if  ( sidenav.classList.contains("nav_open")){ toggler.innerHTML = '&#xe079;' 
-    $(".overs").css("overflow","scroll")
+    // $(".overs").css("overflow","scroll")
 
 }
     else{ toggler.innerHTML = "&#xe080;"
