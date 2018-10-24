@@ -16,7 +16,7 @@ function drawChart() {
     curveType: 'function',
     legend: { position: 'bottom' },
     width: 900,
-    height: 500,
+    height: 400,
   
   };
 
