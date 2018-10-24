@@ -8,7 +8,15 @@ function Toggle() {
     sidenav.classList.toggle("nav_open");
     document.getElementById("main").classList.toggle("main_open");
     toggler.classList.toggle("togggler_left");
-    sidenav.classList.contains("nav_open") ? toggler.innerHTML = '&#xe079;' : toggler.innerHTML = "&#xe080;"
+    if  ( sidenav.classList.contains("nav_open")){ toggler.innerHTML = '&#xe079;' 
+    $(".overs").css("overflow","scroll")
+
+}
+    else{ toggler.innerHTML = "&#xe080;"
+    $(".overs").css("overflow","visible")
+
+}
+  
 }
 window.onload = function() {
 

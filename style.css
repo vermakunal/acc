@@ -339,17 +339,22 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+  color: var(--tcc);
+  background-color: transparent;
+}
 .charbox {
   background: #fff;
   height: 500px;
   width: 100%;
   border-radius: 11px;
+  position: relative;
+  top: 5px;
 }
 #curve_chart
 {
   position: absolute;
- left: 0;
+  left: 20%;
 }
 .overs
 {
