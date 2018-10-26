@@ -18,6 +18,14 @@
 </head>
 
 <body>
+    <div class="top" id="tops">
+        <div class="head oops">Compliance Management System
+        </div>
+        <div class="setting">
+            <div class="glyphicon glyphicon-bell rip"></div>
+            <div class="glyphicon glyphicon-cog rip" onclick="flipcolor()"></div>
+        </div>
+    </div>
     <div class="glyphicon" id="toggler" onclick="Toggle()">&#xe080;</div>
     <!-- sIDE nAVbAR -->
     <div id="sidenav" class="sidenav">
@@ -30,9 +38,10 @@
             </div>
         </div>
         <div class="nav_content Csides">
-            <ul class="sides">
-                <li>
-                    <a data-toggle="tab" href="#menu1">Request New NID</a>
+            <ul class="sides ">
+                <li class="active">
+                    <a data-toggle="tab" href="#menu1">Home</a>
+                    <!-- Request New NID -->
                 </li>
                 <li>
                     <a data-toggle="tab" href="#menu2" title="Search/Modify NID/Training details">Training
@@ -46,7 +55,7 @@
                     <a data-toggle="collapse" data-target="#ddm">
                         Admin
                     </a>
-                    <ul id="ddm" class="sides collapse" aria-expanded="false" style="height: 0px;">
+                    <ul id="ddm" class="sides collapse" aria-expanded="false">
                         <li>
                             <a data-toggle="tab" href="#menu11">Simple Admin</a>
                         </li>
@@ -58,103 +67,62 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <a data-toggle="tab" href="#menu4" title="Help And tutorial">Help And tutorial</a>
+                </li>
+
             </ul>
 
         </div>
-        <div class="nav_content ndown">
+        <!-- <div class="nav_content ndown">
 
             <button class="mbutton">Log Out</button>
             <label class="switch">
                 <input type="checkbox" checked oninput="flipcolor(this)">
                 <span class="slider round"></span>
             </label>
-        </div>
+        </div> -->
     </div>
     <!-- sIDE nAVbAR -->
     <!--  hEADING -->
+
     <div id="main">
-        <div class="top" id="tops">
-            <div class="head oops">Aetan Compliance Management System
-            </div>
-            <!--  tOP nAV bAR -->
-            <div class="sec_nav">
-                <nav class="navbar navbar-inverse">
-                    <div class="container-fluid _cen">
-                        <div class="navbar-header">
-                            <div>
-                                <a data-toggle="tab" class="navbar-brand" href="#home">
-                                    <span class="glyphicon">&#xe021;</span>
-                                </a>
-                            </div>
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse cen" id="myNavbar">
-                            <ul class="nav navbar-nav cen">
-                                <li>
-                                    <a data-toggle="tab" href="#menu1">Request New NID</a>
-                                </li>
-                                <li>
-                                    <a data-toggle="tab" href="#menu2" title="Search/Modify NID/Training details">Training
-                                        Management</a>
-                                </li>
-                                <li>
-                                    <a data-toggle="tab" href="#menu3" title="Dept Transfer/ReActivate/Other Info Change">Other
-                                        Task</a>
-                                </li>
-                                <li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        Admin <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a data-toggle="tab" href="#menu11">Simple Admin</a>
-                                        </li>
-                                        <li>
-                                            <a data-toggle="tab" href="#menu22">BG Admin</a>
-                                        </li>
-                                        <li>
-                                            <a data-toggle="tab" href="#menu33">Super Admin</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <!-- tOP nAV bAR -->
-        </div>
+
         <!--  hEADING -->
         <div class="context">
             <div class="tab-content">
-                <div id="home" class="tab-pane fade in active">
-                  <div class="cards">
-                        <div class="titlehead">'OnBoard/OffBoard Employees monthly status'</div>
-                        <br>
-                        <div class="charbox">
-                            <div id="curve_chart">
-    
+
+                <div id="menu1" class="tab-pane fade in active">
+                    <h1>Home</h1>
+                    <div>
+
+                        <p>
+
+                            <div class="cards">
+                                <div class="titlehead">OnBoard/OffBoard Employees monthly status</div>
+                                <div class="charbox ">
+                                    <div id="curve_chart" class="cgg">
+
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                  </div>
-                  <br>
-                  <div>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet perferendis ipsam tenetur adipisci facilis a ipsa, aperiam veritatis exercitationem repudiandae nemo blanditiis enim nisi et, quia quaerat ratione nobis beatae aliquam minima quidem pariatur cumque debitis? Ex repellat iste vitae provident excepturi totam nesciunt sint ut? Asperiores fuga voluptas ducimus praesentium, maiores non quasi minima blanditiis sit consectetur provident nobis repudiandae velit. Fuga minima rerum consequatur libero quis culpa ullam, voluptatibus tempore, quo doloribus porro. Quam laboriosam, quidem distinctio consequatur numquam natus modi ex veniam eligendi dignissimos est, similique, atque esse nisi porro cupiditate nemo harum ad quos cum ipsa. Temporibus voluptatum, doloribus enim explicabo officia repellendus cupiditate assumenda quisquam nulla natus, dolorem cum expedita non et distinctio ea autem accusamus impedit ipsum earum, voluptatibus officiis! Quas rem nisi vel dolorem ipsam id sunt nobis iusto laborum repudiandae veniam saepe voluptates dignissimos deserunt in beatae, magni, ratione odit ad omnis necessitatibus officia. Quas aliquid expedita veritatis omnis eius sapiente aut! Consequuntur ea aliquid cum unde facere, alias, iusto eaque assumenda esse exercitationem harum, excepturi tempore non natus accusantium doloribus? Qui pariatur possimus harum commodi quos dignissimos nihil cum saepe. Tempora aperiam excepturi ea tempore dolor ipsa veniam blanditiis voluptate officia!
-                  </div>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                    <h3>Request New NID</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, dolores laboriosam. Expedita vel
-                        veritatis exercitationem possimus accusamus, repellendus nulla necessitatibus officia
-                        perferendis tempore dolore explicabo alias magnam nam a omnis? Repellat ipsa esse optio
-                        possimus quia eaque, error hic quae nihil necessitatibus tenetur omnis, adipisci incidunt,
-                        facilis maxime quis. Placeat sequi ipsa sint aperiam eum repellendus, mollitia maxime alias!
-                    </p>
-                    <hr>
+
+                            <div class="cards">
+                                <div class="titlehead">NDA/IT Forms received status</div>
+                                <div class="charbox">
+                                    <div id="piechart_3d" class="cgg"></div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="cards">
+                                <div class="titlehead">Result</div>
+                                <div  class="img_container">
+                                    <img src="/assets/result.jpg">
+                                </div>
+                            </div>
+                        </p>
+                    </div>
                 </div>
                 <div id="menu2" class="tab-pane fade">
                     <h3>Training Management</h3>
@@ -184,6 +152,38 @@
                     <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
                         explicabo.</p>
                 </div>
+                <div id="menu4" class="tab-pane fade ">
+                    <h1>Help And tutorial</h1>
+                    <div>
+
+                        <p>
+
+                            <div class="cards">
+                                <div class="titlehead">Videos</div>
+                                <div> 
+                                    <ul class="vids">
+                                        <li><div data-url="http://acmsportal/Images/videos/Request%20New%20Nid.mp4">Request New NID</div> </li>
+                                        
+                                        <li><div  data-url="http://acmsportal/Images/videos/Update%20Training%20and%20Nid%20details.mp4">Update Training & Nid details</div></li>
+                                        <li><div data-url="http://acmsportal/Images/videos/Upload%20NDA%20and%20IT%20forms.mp4">Upload NDA & IT forms</div></li>
+                                        <li><div data-url="http://acmsportal/Images/videos/Dept%20Transfer,%20Reactivation%20and%20Info%20Change.mp4" >Dept Transfer, Reactivation & Info Change</div></li>
+                                    </ul>
+                                </div>
+                               
+                            </div>
+                            <div class="cards">
+                                    <div class="titlehead">About Compliance Management System </div>
+                                    <div> 
+                                            <ul class="vids">
+                                                    <li>Drives Aetna Compliance requirements on NDA &amp; IT security forms &amp; BCI training</li><li>Intranet based application accessible from ALL offshore and onsite locations</li><li>Provides real time compliance status of the Aetna account</li><li>Repository of all NIDs &amp; one stop shop for ALL NID related transactions</li><li>Excellent reporting facility</li><li>Synch-up with Aetna’s Peoplesoft system on weekly basis for updated information</li><li>Repository for new joiner checklist, NDA/IT form templates, BCI instructions</li>
+                                                </ul>
+                                    </div>
+                                   
+                                </div>
+
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -194,6 +194,19 @@
             <div class="base_footer">Infosys &copy;2018-2019
         </div>
         </div> -->
+        <!-- <div id="playes">
+               <div>
+                    <video  controls>
+                            <source src="http://acmsportal/Images/videos/Request%20New%20Nid.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video/Or you do not have access.
+                        </video>
+               </div>
+            <div id="quitplayer" onclick="removeplayer()" ><span class="glyphicon glyphicon-remove"></span></div>  
+          </div> -->
+          <div id="_ee">
+            <video ></video>
+
+          </div>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 const setting =
 {
     nav: false,
+    t:false
 }
 function Toggle() {
     var toggler = document.getElementById("toggler");
@@ -9,8 +10,6 @@ function Toggle() {
     document.getElementById("main").classList.toggle("main_open");
     toggler.classList.toggle("togggler_left");
     if  ( sidenav.classList.contains("nav_open")){ toggler.innerHTML = '&#xe079;' 
-    // $(".overs").css("overflow","scroll")
-
 }
     else{ toggler.innerHTML = "&#xe080;"
     $(".overs").css("overflow","visible")
@@ -21,6 +20,53 @@ function Toggle() {
 window.onload = function() {
 
       Toggle();
+      
+$(".rip").click(function (e) {
+  
+    $(".ripple").remove();
+    var posX = $(this).offset().left,
+        posY = $(this).offset().top,
+        buttonWidth = $(this).width(),
+        buttonHeight =  $(this).height();
+    $(this).prepend("<span class='ripple'></span>");
+   // Make it round!
+    if(buttonWidth >= buttonHeight) {
+      buttonHeight = buttonWidth;
+    } else {
+      buttonWidth = buttonHeight; 
+    }
+    
+    // Get the center of the element
+    var x = e.pageX - posX - buttonWidth / 2;
+    var y = e.pageY - posY - buttonHeight / 2;
+    
+   
+    // Add the ripples CSS and start the animation
+    $(".ripple").css({
+      width: buttonWidth,
+      height: buttonHeight,
+      top: y + 'px',
+      left: x + 'px'
+    }).addClass("rippleEffect");
+  });
+  mobileSet();
+  Setplayer();
+
+
+
+}
+function mobileSet(){
+    if(innerWidth<500)
+    {
+        vt=vt.replace("[[width]]",window.innerWidth);
+        options.width=this.innerWidth*0.9;
+        options.height=this.innerHeight*0.5;
+    }
+    else
+    {
+        vt=vt.replace("[[width]]","");
+    }
+ 
 }
 const dark=
 {
@@ -40,15 +86,20 @@ const white=
     '--stcc':'white'
 
 };
-function flipcolor(t)
+function flipcolor()
 {
-if(t.checked)
+  
+if(setting.t)
 {
-    manageColor(dark) 
+    manageColor(dark) ;
+    setting.t=false;
 }
 else
 {
-    manageColor(white) 
+    manageColor(white) ;
+    setting.t=true;
+
+
 }
     
 }
@@ -56,18 +107,37 @@ else
 function manageColor(obb) 
 {
     for (const key in obb) {
-        console.log(key.toString())
     document.documentElement.style.setProperty(key.toString(), obb[key].toString());
        
     }
     
 }
-window.onscroll = function() { scrollFunction() };
 
-function scrollFunction() {
-    if (document.body.scrollTop > 512 || document.documentElement.scrollTop > 512) {
-        document.getElementById("tops").style.position = "fixed";
-    } else {
-        document.getElementById("tops").style.position = "static";
-    }
+function removeplayer()
+{
+    document.querySelector("#playes").remove();
+}
+
+var vt=`
+<div>
+     <video width="[[width]]"   controls>
+             <source onerror="this.src='https://www.w3schools.com/html/mov_bbb.mp4'" src="[[src]]" type="video/mp4">
+             Your browser does not support HTML5 video/Or you do not have access.
+         </video>
+</div>
+<div id="quitplayer" onclick="removeplayer()" ><span class="glyphicon glyphicon-remove"></span></div>  
+`;
+
+function Setplayer()
+{
+  
+    $(".vids>li>div").click(function () 
+    {
+     var u=   this.getAttribute("data-url")
+        var _vt=vt.replace("[[src]]",u);
+        var e=document.createElement("div");
+        e.id="playes";
+        e.innerHTML=_vt;
+        document.querySelector("#_ee").appendChild(e);
+    });
 }
