@@ -180,10 +180,10 @@ button {
   background: url("./assets/user.svg");
   height: 200px;
   border-radius: 50%;
-  background-size: contain;
+  background-size: contain!important;
   width: 200px;
   display: inline-block;
-  border: solid;
+  border: solid;    background-position-x: center!important;
 }
 ul.sides {
   list-style: none;

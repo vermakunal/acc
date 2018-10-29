@@ -3,6 +3,8 @@ const setting =
     nav: false,
     t:false
 }
+
+
 function Toggle() {
     var toggler = document.getElementById("toggler");
     var sidenav = document.getElementById("sidenav");
@@ -55,6 +57,7 @@ $(".rip").click(function (e) {
 
 
 }
+
 function mobileSet(){
     if(innerWidth<500)
     {
@@ -144,4 +147,13 @@ function Setplayer()
         e.innerHTML=_vt;
         document.querySelector("#_ee").appendChild(e);
     });
+}
+
+
+
+function _setback(e)
+{
+
+    e.style.background='url(http://iscls2apps/EmployeeDiary/aspx/ShowImage.aspx)';
+
 }
