@@ -70,20 +70,24 @@ function mobileSet(){
 }
 const dark=
 {
+    '--bdr': '#9c27b0',
     '--prm':'#9c27b0',
     '--tcc':'white',
     '--bgg':'#424242',
     '--sbgg':'#424242',
-    '--stcc':'white'
+    '--stcc':'white',
+    '--bdr':'#9c27b0'
  
 };
 const white=
 {
+    '--bdr': '#fff',
     '--prm':'#3f51b5',
     '--tcc':'#303030',
     '--bgg':'white',
     '--sbgg':'#3f51b5',
-    '--stcc':'white'
+    '--stcc':'white',
+    ' --bdr':'white'
 
 };
 function flipcolor()

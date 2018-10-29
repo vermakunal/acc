@@ -1,9 +1,11 @@
 :root {
+  --bdr: #9c27b0;
   --prm: #9c27b0;
   --tcc: white;
   --bgg: #424242;
   --sbgg: #424242;
   --stcc: white;
+
 
 }
 
@@ -208,13 +210,14 @@ ul.sides > li > a {
 
 #ddm > li > a:hover,
 .sides > li > a:hover {
-  border-bottom: solid #9c27b0;
+  border-bottom: solid var(--bdr);
+  color:white;
 }
 
 ul#ddm {
   width: 72%;
   float: right;
-  border-left: solid #9c27b0;
+  border-left: solid var(--bdr);
 }
 
 .ndown {
@@ -236,7 +239,7 @@ ul#ddm {
 
 .titlehead:hover {
   border-left: solid 66px var(--prm);
-
+  letter-spacing: 4px;
 }
 
 .titlehead {
