@@ -22,8 +22,9 @@
         <div class="head oops">Compliance Management System
         </div>
         <div class="setting">
-            <div class="glyphicon glyphicon-bell rip"></div>
-            <div class="glyphicon glyphicon-cog rip" onclick="flipcolor()"></div>
+            <div class="glyphicon glyphicon-bell "></div>
+            <div class="glyphicon glyphicon-envelope "></div>
+            <div class="glyphicon glyphicon-cog "></div>
         </div>
     </div>
     <div class="glyphicon" id="toggler" onclick="Toggle()">&#xe080;</div>
@@ -31,7 +32,7 @@
     <div id="sidenav" class="sidenav">
         <div class="nav_content ntop">
             <div class="top_context">
-                <div class="usre_image" onclick="_setback(this)" ></div>
+                <div class="usre_image"></div>
                 <div class="caption">
                     <span>Welcome, &nbsp;&nbsp;user Name</span>
                 </div>
@@ -54,6 +55,7 @@
                 <li>
                     <a data-toggle="tab" href="#menu4" title="Help And tutorial">Help And tutorial</a>
                 </li>
+
                 <li>
                     <a data-toggle="collapse" data-target="#ddm">
                         Admin
@@ -70,19 +72,12 @@
                         </li>
                     </ul>
                 </li>
-               
+
 
             </ul>
 
         </div>
-        <!-- <div class="nav_content ndown">
 
-            <button class="mbutton">Log Out</button>
-            <label class="switch">
-                <input type="checkbox" checked oninput="flipcolor(this)">
-                <span class="slider round"></span>
-            </label>
-        </div> -->
     </div>
     <!-- sIDE nAVbAR -->
     <!--  hEADING -->
@@ -97,117 +92,136 @@
                     <h1>Home</h1>
                     <div>
 
-                        <p>
+                        <div class="cards">
+                            <div class="titlehead">OnBoard/OffBoard Employees monthly status</div>
+                            <div class="charbox ">
+                                <div id="curve_chart" class="cgg">
 
-                            <div class="cards">
-                                <div class="titlehead">OnBoard/OffBoard Employees monthly status</div>
-                                <div class="charbox ">
-                                    <div id="curve_chart" class="cgg">
-
-                                    </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="cards">
-                                <div class="titlehead">NDA/IT Forms received status</div>
-                                <div class="charbox">
-                                    <div id="piechart_3d" class="cgg"></div>
-                                </div>
-                                
+                        <div class="cards">
+                            <div class="titlehead">NDA/IT Forms received status</div>
+                            <div class="charbox">
+                                <div id="piechart_3d" class="cgg"></div>
                             </div>
+                        </div>
 
-                            <div class="cards">
-                                <div class="titlehead">Result</div>
-                                <div  class="img_container">
-                                    <img src="./assets/result.jpg">
-                                </div>
+                        <div class="cards">
+                            <div class="titlehead">Result</div>
+                            <div class="img_container">
+                                <img src="./assets/result.jpg">
                             </div>
-                        </p>
+                        </div>
+
                     </div>
                 </div>
                 <div id="menu2" class="tab-pane fade">
                     <h3>Training Management</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium,
-                        totam rem aperiam.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                 </div>
                 <div id="menu3" class="tab-pane fade">
                     <h3>Other Task</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus. Repellendus
-                        assumenda vero dolorem neque autem accusamus sed odit ad non dolorum dolor, sit vitae dicta
-                        enim possimus tempora! Consectetur suscipit aspernatur eligendi accusamus dolorum! Vero libero
-                        modi, animi minima, ullam rerum rem eligendi est ipsam iusto laudantium aliquid quam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus. Repellendus assumenda vero dolorem neque autem accusamus sed odit ad non dolorum dolor, sit vitae dicta enim possimus tempora! Consectetur suscipit aspernatur
+                        eligendi accusamus dolorum! Vero libero modi, animi minima, ullam rerum rem eligendi est ipsam iusto laudantium aliquid quam.</p>
                 </div>
+
                 <div id="menu11" class="tab-pane fade">
                     <h3>Simple Admin</h3>
-                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo.</p>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
                 </div>
                 <div id="menu22" class="tab-pane fade">
                     <h3>BG Admin</h3>
-                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo.</p>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
                 </div>
                 <div id="menu33" class="tab-pane fade">
                     <h3>Super Admin</h3>
-                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo.</p>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
                 </div>
                 <div id="menu4" class="tab-pane fade ">
                     <h1>Help And tutorial</h1>
                     <div>
 
-                        <p>
+                        <div class="cards">
+                            <div class="titlehead">Videos</div>
+                            <div>
+                                <ul class="vids">
+                                    <li>
+                                        <div data-url="http://acmsportal/Images/videos/Request%20New%20Nid.mp4">Request New NID</div>
+                                    </li>
 
-                            <div class="cards">
-                                <div class="titlehead">Videos</div>
-                                <div> 
-                                    <ul class="vids">
-                                        <li><div data-url="http://acmsportal/Images/videos/Request%20New%20Nid.mp4">Request New NID</div> </li>
-                                        
-                                        <li><div  data-url="http://acmsportal/Images/videos/Update%20Training%20and%20Nid%20details.mp4">Update Training & Nid details</div></li>
-                                        <li><div data-url="http://acmsportal/Images/videos/Upload%20NDA%20and%20IT%20forms.mp4">Upload NDA & IT forms</div></li>
-                                        <li><div data-url="http://acmsportal/Images/videos/Dept%20Transfer,%20Reactivation%20and%20Info%20Change.mp4" >Dept Transfer, Reactivation & Info Change</div></li>
-                                    </ul>
-                                </div>
-                               
+                                    <li>
+                                        <div data-url="http://acmsportal/Images/videos/Update%20Training%20and%20Nid%20details.mp4">Update Training & Nid details</div>
+                                    </li>
+                                    <li>
+                                        <div data-url="http://acmsportal/Images/videos/Upload%20NDA%20and%20IT%20forms.mp4">Upload NDA & IT forms</div>
+                                    </li>
+                                    <li>
+                                        <div data-url="http://acmsportal/Images/videos/Dept%20Transfer,%20Reactivation%20and%20Info%20Change.mp4">Dept Transfer, Reactivation & Info Change</div>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="cards">
-                                    <div class="titlehead">About Compliance Management System </div>
-                                    <div> 
-                                            <ul class="vids">
-                                                    <li>Drives Aetna Compliance requirements on NDA &amp; IT security forms &amp; BCI training</li><li>Intranet based application accessible from ALL offshore and onsite locations</li><li>Provides real time compliance status of the Aetna account</li><li>Repository of all NIDs &amp; one stop shop for ALL NID related transactions</li><li>Excellent reporting facility</li><li>Synch-up with Aetna’s Peoplesoft system on weekly basis for updated information</li><li>Repository for new joiner checklist, NDA/IT form templates, BCI instructions</li>
-                                                </ul>
-                                    </div>
-                                   
-                                </div>
 
-                        </p>
+                        </div>
+                        <div class="cards">
+                            <div class="titlehead">About Compliance Management System </div>
+                            <div>
+                                <ul class="vids">
+                                    <li>Drives Aetna Compliance requirements on NDA &amp; IT security forms &amp; BCI training</li>
+                                    <li>Intranet based application accessible from ALL offshore and onsite locations
+                                    </li>
+                                    <li>Provides real time compliance status of the Aetna account</li>
+                                    <li>Repository of all NIDs &amp; one stop shop for ALL NID related transactions</li>
+                                    <li>Excellent reporting facility</li>
+                                    <li>Synch-up with Aetna’s Peoplesoft system on weekly basis for updated information
+                                    </li>
+                                    <li>Repository for new joiner checklist, NDA/IT form templates, BCI instructions
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="cards">
+                            <div class="titlehead">ACMS Functionalities</div>
+                            <div>
+                                <ul class="vids">
+                                    <li>New NID creation request</li>
+                                    <li>Department transfer request</li>
+                                    <li>Worker information change</li>
+                                    <li>NID termination request</li>
+                                    <li>NID re-activation request</li>
+                                    <li>Search using Infosys employee ID/NID/Project code </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <div class="titlehead">Reports(Restricted access) </div>
+                            <div>
+                                <ul class="vids">
+                                    <li>Single click compliance report – real time</li>
+                                    <li>Compliance owners’s report for location’s anchors</li>
+                                    <li>Report of NIDs expiring in next 30 days</li>
+                                    <li>Report of NDA/IT forms on Infosys server</li>
+                                    <li>Report of NID status</li>
+                                </ul>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <div class="oops footer">
-            <div>
-          
-            </div>
-            <div class="base_footer">Infosys &copy;2018-2019
-        </div>
-        </div> -->
-        <!-- <div id="playes">
-               <div>
-                    <video  controls>
-                            <source src="http://acmsportal/Images/videos/Request%20New%20Nid.mp4" type="video/mp4">
-                            Your browser does not support HTML5 video/Or you do not have access.
-                        </video>
-               </div>
-            <div id="quitplayer" onclick="removeplayer()" ><span class="glyphicon glyphicon-remove"></span></div>  
-          </div> -->
-          <div id="_ee">
-            <video ></video>
+    <div id="_ee">
+        <video></video>
 
-          </div>
+    </div>
 </body>
 
 </html>
